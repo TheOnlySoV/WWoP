@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 673 - Gogoat
+  m_EditorClassIdentifier: 
+  info:
+    pID: 673
+    pokemonName: Gogoat
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 2d5aa97aff29e2a4e9cc63c08551efd1, type: 2}
+    type2: {fileID: 11400000, guid: 19cf4e3924e28b64a8d6004e5cd56209, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Vine Whip
+      move: {fileID: 11400000, guid: fad6dd490bd9d5440a390bf4445c0251, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7 - Vine Whip
+      move: {fileID: 11400000, guid: fad6dd490bd9d5440a390bf4445c0251, type: 2}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9 - Tail Whip
+      move: {fileID: 11400000, guid: df48edacbf23a684ea21bdd9c89131dd, type: 2}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12 - Leech Seed
+      move: {fileID: 11400000, guid: 7c8f25951d369314a9e40d27070b8b8d, type: 2}
+    - name: Level 13 - Razor Leaf
+      move: {fileID: 11400000, guid: e2018eb6b3526334693fef97114f9cd5, type: 2}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16 - Worry Seed
+      move: {fileID: 11400000, guid: 41c0a17a14299304aaf032f3bfc2adbf, type: 2}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20 - Synthesis
+      move: {fileID: 11400000, guid: b0aa414c2fc28ad459ea3f492a247da2, type: 2}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22 - Take Down
+      move: {fileID: 11400000, guid: 4cf1f8fb185047a44896fd550ffcbce5, type: 2}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26 - Bulldoze
+      move: {fileID: 11400000, guid: bfda948cd4539334ca8b258b00a4a0c3, type: 2}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29
+      move: {fileID: 0}
+    - name: Level 30 - Seed Bomb
+      move: {fileID: 11400000, guid: f8d3267b27868bc4c9723fa0613aa156, type: 2}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34 - Bulk Up
+      move: {fileID: 11400000, guid: 019a76b13bc7bc242a47287c9948c466, type: 2}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47 - Horn Leech
+      move: {fileID: 11400000, guid: ac7fc6b80922fb341b100ede38f8285c, type: 2}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55 - Leaf Blade
+      move: {fileID: 11400000, guid: 5bb9fcc9a4ed63b46b51ccfdf96b10c7, type: 2}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58 - Milk Drink
+      move: {fileID: 11400000, guid: 5811d4adb861ce94bbe2ee8d75dcb4ae, type: 2}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 123
+      attack: 100
+      defense: 0
+      specialAttack: 97
+      specialDefense: 0
+      speed: 68
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 1e346356270e2034b8421d16348bed2b, type: 3}
+    profile:
+      pokedexSpecies: "Mount Pok\xE9mon"
+      pokedexDescription: They inhabit mountainous regions. The leader of the herd
+        is decided by a battle of clashing horns.
+      height: 1.7 m
+      weight: 91 kg
+      eggGroups:
+      - Field
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 651 - Quilladin
+  m_EditorClassIdentifier: 
+  info:
+    pID: 651
+    pokemonName: Quilladin
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 2d5aa97aff29e2a4e9cc63c08551efd1, type: 2}
+    type2: {fileID: 11400000, guid: 19cf4e3924e28b64a8d6004e5cd56209, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Vine Whip
+      move: {fileID: 11400000, guid: fad6dd490bd9d5440a390bf4445c0251, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5 - Vine Whip
+      move: {fileID: 11400000, guid: fad6dd490bd9d5440a390bf4445c0251, type: 2}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8 - Rollout
+      move: {fileID: 11400000, guid: 0b9d61662b90471408dd8530997338d0, type: 2}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11 - Bite
+      move: {fileID: 11400000, guid: 2c58ae533451d474088f0bad0c7634ff, type: 2}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15 - Leech Seed
+      move: {fileID: 11400000, guid: 7c8f25951d369314a9e40d27070b8b8d, type: 2}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19 - Pin Missile
+      move: {fileID: 11400000, guid: 3711eda1f1e439344a7c0b89dc8950c4, type: 2}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29 - Take Down
+      move: {fileID: 11400000, guid: 4cf1f8fb185047a44896fd550ffcbce5, type: 2}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35 - Seed Bomb
+      move: {fileID: 11400000, guid: f8d3267b27868bc4c9723fa0613aa156, type: 2}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39 - Mud Shot
+      move: {fileID: 11400000, guid: 11797b83ff9856e4b8eceaa163dab3f4, type: 2}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44 - Bulk Up
+      move: {fileID: 11400000, guid: 019a76b13bc7bc242a47287c9948c466, type: 2}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48 - Body Slam
+      move: {fileID: 11400000, guid: 884970d48ca78864fa242981466597d0, type: 2}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52 - Pain Split
+      move: {fileID: 11400000, guid: fca35b7a21216bc46a708190b8927c80, type: 2}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56 - Wood Hammer
+      move: {fileID: 11400000, guid: 8e2c00db43befa24abf7ff2b5ed054ec, type: 2}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 61
+      attack: 78
+      defense: 0
+      specialAttack: 56
+      specialDefense: 0
+      speed: 57
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 2a920feebd1ba2045a64e76e19e4ac01, type: 3}
+    profile:
+      pokedexSpecies: "Spiny Armor Pok\xE9mon"
+      pokedexDescription: "They strengthen their lower bodies by running into one
+        another. They are very kind and won\u2019t start fights."
+      height: 0.7 m
+      weight: 29 kg
+      eggGroups:
+      - Field
+      genderRatio: 87.5:12.5
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

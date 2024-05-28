@@ -1,0 +1,182 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Daelonik Artworks
+InfoPreset Use this preset to convert Daelonik Artworks assets.
+InfoStatus ● ● ● ● ○
+InfoOnline https://assetstore.unity.com/publishers/3021
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputOptions Props/Grass/Vegetation 2
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	InfoMessage When converting Daelonik Artworks props, the colors cannot be matched because different shading is used. You will need to manually adjust the main and detail colors to get a similar result!
+}
+
+if OUTPUT_OPTION_CONTAINS Vegetation
+{
+	InfoMessage When converting Daelonik Artworks vegetation, the colors cannot be matched because different shading is used. You will need to manually adjust the main color to get a similar result!
+}
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	Include Use Default Props Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Vegetation
+{
+	Include Use Default Grass Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Vegetation
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_FROM_CHANNEL 0
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 16
+	Mesh SetMotion3 GET_MASK_FROM_CHANNEL 5
+
+	Mesh SetPivots NONE
+}
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	Include Use Default Props Settings
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Settings
+}
+
+*******************************************************************
+
+if SHADER_PATH_CONTAINS TopBottom
+{
+	Include Use Default Props Settings
+
+	Material COPY_TEX _MainTex _MainAlbedoTex
+	Material COPY_TEX _BumpMap _MainNormalTex
+
+	Material COPY_VECTOR _Color _MainColor
+	Material COPY_FLOAT _BumpScale _MainNormalValue
+	Material COPY_FLOAT _Metallic _MainMetallicValue
+	Material COPY_FLOAT _OcclusionStrength _MainOcclusionValue
+	Material COPY_FLOAT _Glossiness _MainSmoothnessValue
+	
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_RED _MetallicGlossMap
+	Texture SetGreen GET_GREEN _OcclusionMap
+	Texture SetBlue GET_GRAY _DetailMask
+	Texture SetAlpha GET_ALPHA _MetallicGlossMap
+	Utility START_TEXTURE_PACKING
+	
+	if MATERIAL_HAS_TEX _DetailAlbedoMap
+	{
+		Material SET_VECTOR _SecondColor 0.5 0.5 0.5 1
+		Material COPY_TEX _DetailAlbedoMap _SecondAlbedoTex
+		Material COPY_TEX _DetailNormalMap _SecondNormalTex
+		Material COPY_FLOAT _DetailNormalMapScale _SecondNormalValue
+
+		Material SET_FLOAT _SecondUVsMode 0
+		Material COPY_ST_AS_VECTOR _DetailAlbedoMap _SecondUVs
+
+		if MATERIAL_FLOAT_EQUALS _UVWorld 1
+		{
+			Material SET_FLOAT _SecondUVsMode 2
+		}
+		
+		Material SET_FLOAT _DetailMode 1
+		Material SET_FLOAT _DetailBlendMode 0
+		
+		Material SET_FLOAT _DetailMeshMode 0
+		Material SET_FLOAT _DetailMaskMode 0
+
+		Material SET_FLOAT _DetailBlendMinValue 0
+		Material SET_FLOAT _DetailBlendMaxValue 0
+	}
+}
+
+if SHADER_PATH_CONTAINS Grass
+{
+	Material COPY_FLOAT _MaskClipValue _AlphaClipValue
+
+	Material COPY_TEX _MainTex _MainAlbedoTex
+	Material COPY_TEX _BumpMap _MainNormalTex
+
+	Material COPY_FLOAT _NormalScale _MainNormalValue
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+}
+
+if SHADER_PATH_CONTAINS TreeAnim Leaves
+{
+	Material SET_SHADER SHADER_SUBSURFACE_PLANT
+	Material SET_FLOAT _RenderClip 1
+	Material SET_FLOAT _RenderCull 0
+
+	Material COPY_FLOAT _MaskClipValue _AlphaClipValue
+
+	Material COPY_TEX _MainTex _MainAlbedoTex
+	Material COPY_TEX _BumpMap _MainNormalTex
+
+	Material COPY_FLOAT _NormalScale _MainNormalValue
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+}
+
+if SHADER_PATH_CONTAINS TreeAnimTrunk
+{
+	Include Use Default Bark Settings
+
+	Material COPY_TEX _MainTex _MainAlbedoTex
+	Material COPY_TEX _BumpMap _MainNormalTex
+	Material COPY_TEX _OcclusionMap _MainMaskTex
+
+	Material COPY_VECTOR _Color _MainColor
+	Material COPY_FLOAT _BumpScale _MainNormalValue
+	Material COPY_FLOAT _OcclusionStrength _MainOcclusionValue
+	Material COPY_FLOAT _Glossiness _MainSmoothnessValue
+	
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_RED _MetallicGlossMap
+	Texture SetGreen GET_GREEN _OcclusionMap
+	Texture SetBlue GET_GRAY _DetailMask
+	Texture SetAlpha GET_ALPHA _MetallicGlossMap
+	Utility START_TEXTURE_PACKING
+	
+	if MATERIAL_HAS_TEX _DetailAlbedoMap
+	{
+		Material SET_VECTOR _SecondColor 0.5 0.5 0.5 1
+		Material COPY_TEX _DetailAlbedoMap _SecondAlbedoTex
+		Material COPY_TEX _DetailNormalMap _SecondNormalTex
+		Material COPY_FLOAT _DetailNormalMapScale _SecondNormalValue
+
+		Material SET_FLOAT _SecondUVsMode 0
+		Material COPY_ST_AS_VECTOR _DetailAlbedoMap _SecondUVs
+
+		if MATERIAL_FLOAT_EQUALS _UVWorld 1
+		{
+			Material SET_FLOAT _SecondUVsMode 2
+		}
+		
+		Material SET_FLOAT _DetailMode 1
+		Material SET_FLOAT _DetailBlendMode 0
+		
+		Material SET_FLOAT _DetailMeshMode 0
+		Material SET_FLOAT _DetailMaskMode 0
+
+		Material SET_FLOAT _DetailBlendMinValue 0
+		Material SET_FLOAT _DetailBlendMaxValue 0
+	}
+}

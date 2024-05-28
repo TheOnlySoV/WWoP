@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 637 - Volcarona
+  m_EditorClassIdentifier: 
+  info:
+    pID: 637
+    pokemonName: Volcarona
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 87ef2df4d3d1ec245a6075e6542a56a9, type: 2}
+    type2: {fileID: 11400000, guid: 29da0cf82e118ea4893cfcbb48cf59eb, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Thrash
+      move: {fileID: 11400000, guid: 496adfadd6485c44faa91f8e1e1ba275, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10 - Absorb
+      move: {fileID: 11400000, guid: 4631293afbe0bde419375dbf0179b533, type: 2}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20 - Gust
+      move: {fileID: 11400000, guid: 47c3287edcf422b43a4a4ed8b75cfa51, type: 2}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29
+      move: {fileID: 0}
+    - name: Level 30 - Fire Spin
+      move: {fileID: 11400000, guid: c15191ad719363945bde7675da5fd6a0, type: 2}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40 - Whirlwind
+      move: {fileID: 11400000, guid: 1b8128d3bc6f08f4cadd435be760bfc0, type: 2}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50 - Silver Wind
+      move: {fileID: 11400000, guid: 8273c7ecf00034c42a64e397a18a357e, type: 2}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60 - Heat Wave
+      move: {fileID: 11400000, guid: aea68daf016deb14fa97dc23df1828d6, type: 2}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70 - Bug Buzz
+      move: {fileID: 11400000, guid: e988511ecd1079344b97b86bd97790a8, type: 2}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80 - Rage Powder
+      move: {fileID: 11400000, guid: d783bd37e6784524a8423ac012269293, type: 2}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90 - Hurricane
+      move: {fileID: 11400000, guid: 9d0e16d8e0a2bbf4d8503b361cdb4463, type: 2}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100 - Fiery Dance
+      move: {fileID: 11400000, guid: 2b488bb0fdc1c6e478e2e19def5f3205, type: 2}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 85
+      attack: 60
+      defense: 0
+      specialAttack: 135
+      specialDefense: 0
+      speed: 100
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 3fe75c0cea0c78248b71d6aff78a22fd, type: 3}
+    profile:
+      pokedexSpecies: "Sun Pok\xE9mon"
+      pokedexDescription: "According to legends, it was hatched from a flaming cocoon
+        to save people and Pok\xE9mon that were suffering from the cold."
+      height: 1.6 m
+      weight: 46 kg
+      eggGroups:
+      - Bug
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

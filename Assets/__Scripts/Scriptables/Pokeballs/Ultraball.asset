@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 114b487b4496bf24b9a51d3f591fa68a, type: 3}
+  m_Name: Ultraball
+  m_EditorClassIdentifier: 
+  name: Ultra Ball
+  model: {fileID: 919132149155446097, guid: 6ea793c413ee4ca44a176eaa2b1b7955, type: 3}
+  throwable: {fileID: 7573312587568099020, guid: da33304845342d342b6bd1005281255d,
+    type: 3}
+  modifier: 2
+  ballCalculation: 0
+  heal: 0
+  sprite: {fileID: 21300000, guid: e8c7082eebab32e4392229c3bb915860, type: 3}

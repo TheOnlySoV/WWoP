@@ -1,0 +1,21 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Nature Hybrid Pack
+InfoPreset Use this preset to convert Nicrom - Nature - Hybrid Pack assets.
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/fantasy/nature-hybrid-pack-181109
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+Include Use Default Props Masks
+
+*******************************************************************
+
+Include Use Default Prop Settings
+
+// Include Unity Default Features
+Include Unity Lit Commons

@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 64 - Kadabra
+  m_EditorClassIdentifier: 
+  info:
+    pID: 64
+    pokemonName: Kadabra
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 8af67009ec3d4114baf817bfd7b3b22b, type: 2}
+    type2: {fileID: 11400000, guid: 19cf4e3924e28b64a8d6004e5cd56209, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Teleport
+      move: {fileID: 11400000, guid: 8b87c45ca3e6c544c9491f5402ad8d04, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16 - Confusion
+      move: {fileID: 11400000, guid: 7a45d6c4e094b4b419fb1623217ff0d6, type: 2}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18 - Disable
+      move: {fileID: 11400000, guid: 4a00ba09fcaf03e4ebea5b7e10c707de, type: 2}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21 - Psybeam
+      move: {fileID: 11400000, guid: ad63287d8a88855478555be8e65df6e8, type: 2}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23 - Miracle Eye
+      move: {fileID: 11400000, guid: 86d9cf9af80a6c4488dcf8eccc959a3b, type: 2}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26 - Reflect
+      move: {fileID: 11400000, guid: b56b16f8d2aa45147a14f1167abca6fa, type: 2}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28 - Psycho Cut
+      move: {fileID: 11400000, guid: 09a9c291adadc8341865c36f3bff7462, type: 2}
+    - name: Level 29
+      move: {fileID: 0}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31 - Recover
+      move: {fileID: 11400000, guid: 78676cfaa16c3f247ba9f46898ab2063, type: 2}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33 - Telekinesis
+      move: {fileID: 11400000, guid: 118852bd2626cf445a6a0f63f4f6226a, type: 2}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36 - Ally Switch
+      move: {fileID: 11400000, guid: 8fc6d103647acec4da46e6619e5b7d48, type: 2}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38 - Psychic
+      move: {fileID: 11400000, guid: 83c8b27429a1c8f4e8d171b0a1a22b91, type: 2}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41 - Role Play
+      move: {fileID: 11400000, guid: 9d3f69497ee2ae34587683b49bc17e23, type: 2}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43 - Future Sight
+      move: {fileID: 11400000, guid: 2d66418a4ee21b344baec41a08d06056, type: 2}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46 - Trick
+      move: {fileID: 11400000, guid: d7ac80908b2095145aaad8334f86e3b0, type: 2}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 40
+      attack: 35
+      defense: 0
+      specialAttack: 120
+      specialDefense: 0
+      speed: 105
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 347d98af9d3721048afe02f21907de47, type: 3}
+    profile:
+      pokedexSpecies: "Psi Pok\xE9mon"
+      pokedexDescription: "It possesses strong mental capabilities, but its psychic
+        powers are halved when it\u2019s not holding a silver spoon."
+      height: 1.3 m
+      weight: 56.5 kg
+      eggGroups:
+      - Human-Like
+      genderRatio: 75:25
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

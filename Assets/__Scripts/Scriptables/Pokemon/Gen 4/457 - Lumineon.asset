@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 457 - Lumineon
+  m_EditorClassIdentifier: 
+  info:
+    pID: 457
+    pokemonName: Lumineon
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: cdf5f06bef5e6774490c9a937a70c801, type: 2}
+    type2: {fileID: 11400000, guid: 19cf4e3924e28b64a8d6004e5cd56209, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Water Gun
+      move: {fileID: 11400000, guid: 41f3f334975b40746a737fea87acd314, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6 - Water Gun
+      move: {fileID: 11400000, guid: 41f3f334975b40746a737fea87acd314, type: 2}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10 - Attract
+      move: {fileID: 11400000, guid: cccae28b257a7d24083e09cdda1cbb25, type: 2}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13 - Rain Dance
+      move: {fileID: 11400000, guid: 11ef08b6bb8c3b14489d273e03be5234, type: 2}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17 - Gust
+      move: {fileID: 11400000, guid: 47c3287edcf422b43a4a4ed8b75cfa51, type: 2}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22 - Water Pulse
+      move: {fileID: 11400000, guid: 798668333a70fa54a8a9fc919135d86a, type: 2}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26 - Captivate
+      move: {fileID: 11400000, guid: 03e00158f8d01a247928ad21b2ad88b2, type: 2}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29 - Safeguard
+      move: {fileID: 11400000, guid: 839aea3b8340f014f8e342eb26f220ff, type: 2}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35 - Aqua Ring
+      move: {fileID: 11400000, guid: c8d1c28f1e010454195012f02352a3ff, type: 2}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42 - Whirlpool
+      move: {fileID: 11400000, guid: 362e9bcb7dc96ab4cb193ae66eb62ba5, type: 2}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53 - Bounce
+      move: {fileID: 11400000, guid: 4024770724ca88a4d88ee6cc77e8750d, type: 2}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59 - Silver Wind
+      move: {fileID: 11400000, guid: 8273c7ecf00034c42a64e397a18a357e, type: 2}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66 - Soak
+      move: {fileID: 11400000, guid: 1023eb573c9bebe4a92d0f219f63304c, type: 2}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 69
+      attack: 69
+      defense: 0
+      specialAttack: 69
+      specialDefense: 0
+      speed: 91
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 7e64a3bd1e8575d43a1e0a9a22c37588, type: 3}
+    profile:
+      pokedexSpecies: "Neon Pok\xE9mon"
+      pokedexDescription: They traverse the deep waters as if crawling over the seafloor.
+        The fantastic lights of its fins shine like stars in the night sky.
+      height: 1.2 m
+      weight: 24 kg
+      eggGroups:
+      - Water 2
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

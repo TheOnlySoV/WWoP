@@ -1,0 +1,529 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Polyart Dreamscape
+InfoPreset Use this preset to convert Polyart Studio - Dreamscape assets.
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/fantasy/dreamscape-nature-meadows-186894
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputOptions Props/Grass/Flowers/Foliage/Plants/Trees 5
+OutputTransforms USE_ORIGINAL_TRANSFORMS
+
+*******************************************************************
+
+// Custom shaders not supported
+if ANY_PREFAB_ATTRIBUTE_CONTAINS Auto
+{
+	InfoError One or more props prefabs contain shaders are not transferable to the Vegetation Engine shaders!
+	OutputValid FALSE
+}
+
+if ANY_PREFAB_ATTRIBUTE_CONTAINS Distant Terrain
+{
+	InfoError One or more mountain prefabs contain shaders are not transferable to the Vegetation Engine shaders!
+	OutputValid FALSE
+}
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Prop
+{
+	Include Use Default Props Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Flowers
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_FROM_CHANNEL 0
+	Mesh SetDetailMask NONE
+	Mesh SetDetailCoord NONE
+	
+	Mesh SetHeight GET_MASK_FROM_CHANNEL 0
+	Mesh SetMotion2 GET_MASK_FROM_CHANNEL 0
+	Mesh SetMotion3 GET_MASK_FROM_CHANNEL 0
+	
+	Mesh SetPivots GET_PIVOTS_PROCEDURAL 0
+}
+
+if OUTPUT_OPTION_CONTAINS Foliage
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion NONE
+	Mesh SetDetailMask NONE
+	Mesh SetDetailCoord NONE
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 0
+	Mesh SetMotion2 NONE
+	Mesh SetMotion3 NONE
+
+	Mesh SetPivots NONE
+}
+
+if OUTPUT_OPTION_CONTAINS Plants
+{
+	Include Use Default Plants Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Trees
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_PROCEDURAL 6
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 16
+	Mesh SetMotion3 GET_MASK_PROCEDURAL 1
+
+	Mesh SetPivots NONE
+}
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	Include Use Default Props Settings
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Flowers Settings
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Settings
+}
+
+if OUTPUT_OPTION_CONTAINS Trees
+{
+	if SHADER_NAME_CONTAINS Surface
+	{
+		Include Use Default Bark Settings
+	}
+}
+
+*******************************************************************
+*                           OLD SETUP                             *
+*******************************************************************
+
+if SHADER_NAME_CONTAINS Grass
+{
+	Material SET_FLOAT _RenderNormals 2
+	//Material SET_FLOAT _FadeGlancingValue 1
+
+	Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+
+	Material COPY_TEX _MainTex _MainAlbedoTex
+	Material COPY_ST_AS_VECTOR _MainTex _MainUVs
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+
+	// Set dual color
+	Material COPY_COLOR _ColorTop _GradientColorOne
+	Material COPY_COLOR _ColorBottom _GradientColorTwo
+}
+
+if SHADER_NAME_CONTAINS Foliage
+{
+	if SHADER_NAME_CONTAINS Billboard
+	{
+		Include Use Default Cross Settings
+		Material SET_FLOAT _FadeHorizontalValue 1
+	}
+	
+	Material SET_FLOAT _RenderNormals 2
+	//Material SET_FLOAT _FadeGlancingValue 1
+
+	Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+
+	Material COPY_TEX _FoliageTexture _MainAlbedoTex
+	Material COPY_ST_AS_VECTOR _FoliageTexture _MainUVs
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+
+	// Set dual color
+	Material COPY_COLOR _ColorTop _GradientColorOne
+	Material COPY_COLOR _ColorBottom _GradientColorTwo
+}
+
+*******************************************************************
+
+if SHADER_NAME_CONTAINS Masked
+{
+	Material SET_FLOAT _RenderNormals 2
+	//Material SET_FLOAT _FadeGlancingValue 1
+	
+	Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+
+	Material COPY_TEX _ColorTexture _MainAlbedoTex
+	Material COPY_ST_AS_VECTOR _ColorTexture _MainUVs
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+
+	Material COPY_COLOR _ColorTint _MainColor
+}
+
+*******************************************************************
+
+if SHADER_NAME_CONTAINS Surface
+{
+	Material COPY_TEX _AlbedoTexture _MainAlbedoTex
+	Material COPY_ST_AS_VECTOR _AlbedoTexture _MainUVs
+	Material COPY_TEX _NormalTexture _MainNormalTex
+
+	Material COPY_COLOR _AlbedoTint _MainColor
+	Material COPY_FLOAT _SmoothnessMultiplier _MainSmoothnessValue
+	
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_GREEN _MetallicTexture
+	Texture SetGreen NONE
+	Texture SetBlue GET_GRAY _CoverageMask
+	Texture SetAlpha GET_GRAY _SmoothnessTexture ACTION_ONE_MINUS
+	Utility START_TEXTURE_PACKING
+	
+	if MATERIAL_KEYWORD_ENABLED _GROUNDCOVERON_ON
+	{		
+		Material COPY_TEX _CoverageTexture _SecondAlbedoTex
+		Material COPY_TEX _CoverageNormalTexture _SecondNormalTex
+
+		Material COPY_VECTOR _CoverageTint _SecondColor
+		Material COPY_FLOAT _CoverageMetallicMultiplier _SecondMetallicValue
+		Material COPY_FLOAT _CoverageSmoothnessMultiplier _SecondSmoothnessValue
+
+		Material COPY_FLOAT _BlendnormalsON _BlendNormalValue
+
+		Material SET_FLOAT _SecondUVsMode 0
+		Material SET_VECTOR _SecondUVs 15 15 0 0
+
+		Material SET_FLOAT _DetailMode 1
+		Material SET_FLOAT _DetailBlendMode 1
+		
+		Material SET_FLOAT _DetailMeshMode 1
+		Material SET_FLOAT _DetailMaskMode 1
+		
+		//Material SET_FLOAT _DetailMaskInvertMode 1
+		Material SET_FLOAT _DetailMaskMinValue 1
+		Material SET_FLOAT _DetailMaskMaxValue 0
+		
+		Material SET_FLOAT _DetailBlendMinValue 0.55
+		Material SET_FLOAT _DetailBlendMaxValue 0.60
+		
+		Texture PropName _SecondMaskTex
+		Texture SetRed NONE
+		Texture SetGreen NONE
+		Texture SetBlue GET_GRAY _CoverageTexture
+		Texture SetAlpha GET_GRAY _CoverageSmoothnessTexture ACTION_ONE_MINUS
+		Utility START_TEXTURE_PACKING
+	}
+	
+	if MATERIAL_HAS_TEX _EmissiveTexture
+	{
+		Material COPY_TEX _EmissiveTexture _EmissiveTex
+		Material COPY_ST_AS_VECTOR _EmissiveTexture _EmissiveUVs
+
+		Material COPY_FLOAT _EmissiveMultiplier _EmissiveIntensityValue
+		
+		Texture PropName _EmissiveTex
+		Texture SetRed GET_GRAY _EmissiveTexture
+		Texture SetGreen GET_GRAY _EmissiveTexture
+		Texture SetBlue GET_GRAY _EmissiveTexture
+		Texture SetAlpha NONE
+		Utility START_TEXTURE_PACKING
+	}
+}
+
+if SHADER_NAME_CONTAINS Detail
+{
+	Material COPY_TEX _AlbedoTexture _MainAlbedoTex
+	Material COPY_ST_AS_VECTOR _AlbedoTexture _MainUVs
+	Material COPY_TEX _NormalTexture _MainNormalTex
+
+	Material COPY_COLOR _AlbedoTint _MainColor
+	Material COPY_FLOAT _SmoothnessMultiplier _MainSmoothnessValue
+	
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_GREEN _MetallicTexture
+	Texture SetGreen NONE
+	Texture SetBlue GET_GRAY _CoverageMask
+	Texture SetAlpha GET_GRAY _SmoothnessTexture ACTION_ONE_MINUS
+	Utility START_TEXTURE_PACKING
+	
+	Material COPY_TEX _TilingAlbedo _SecondAlbedoTex
+	Material COPY_TEX _TilingNormal _SecondNormalTex
+	
+	Material COPY_FLOAT _DetailColorIntensity _SecondAlbedoValue
+	Material COPY_FLOAT _TilingNormalIntensity _SecondNormalValue
+	Material COPY_FLOAT _DetailSmoothIntensity _SecondSmoothnessValue
+
+	Material COPY_FLOAT _BlendnormalsON _BlendNormalValue
+
+	Material SET_FLOAT _SecondUVsMode 0
+	Material SET_VECTOR _SecondUVs 2 2 0 0
+
+	Material SET_FLOAT _DetailMode 1
+	Material SET_FLOAT _DetailBlendMode 0
+
+	Material SET_FLOAT _DetailMeshMode 0
+	Material SET_FLOAT _DetailMaskMode 0
+	
+	//Material SET_FLOAT _DetailMaskInvertMode 1
+	Material SET_FLOAT _DetailMaskMinValue 1
+	Material SET_FLOAT _DetailMaskMaxValue 0
+	
+	Material SET_FLOAT _DetailBlendMinValue 0.55
+	Material SET_FLOAT _DetailBlendMaxValue 0.60
+
+	Texture PropName _SecondMaskTex
+	Texture SetRed NONE
+	Texture SetGreen NONE
+	Texture SetBlue GET_GRAY _TilingAlbedo
+	Texture SetAlpha GET_GRAY _TillingSmoothness
+	Utility START_TEXTURE_PACKING
+
+	if MATERIAL_HAS_TEX _EmissiveTexture
+	{
+		Material COPY_TEX _EmissiveTexture _EmissiveTex
+		Material COPY_ST_AS_VECTOR _EmissiveTexture _EmissiveUVs
+
+		Material COPY_FLOAT _EmissiveMultiplier _EmissiveIntensityValue
+		
+		Texture PropName _EmissiveTex
+		Texture SetRed GET_GRAY _EmissiveTexture
+		Texture SetGreen GET_GRAY _EmissiveTexture
+		Texture SetBlue GET_GRAY _EmissiveTexture
+		Texture SetAlpha NONE
+		Utility START_TEXTURE_PACKING
+	}
+}
+
+*******************************************************************
+*                           NEW SETUP                             *
+*******************************************************************
+
+if SHADER_PATH_CONTAINS Grass
+{
+	Material SET_FLOAT _RenderNormals 2
+	//Material SET_FLOAT _FadeGlancingValue 1
+
+	Material COPY_FLOAT _MaskClip _AlphaClipValue
+
+	Material COPY_TEX _MainTex _MainAlbedoTex
+	Material COPY_ST_AS_VECTOR _MainTex _MainUVs
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+
+	// Set dual color
+	Material COPY_COLOR _ColorTop _GradientColorOne
+	Material COPY_COLOR _ColorBottom _GradientColorTwo
+}
+
+if SHADER_PATH_CONTAINS PA_OtherFoliage
+{
+	Material SET_FLOAT _RenderNormals 2
+
+	Material COPY_TEX _FoliageMap _MainAlbedoTex
+	
+	Material COPY_COLOR _ColorTint _MainColor
+	Material SET_FLOAT _MainSmoothnessValue 0
+
+	if MATERIAL_HAS_TEX _FlowerMask
+	{
+		if MATERIAL_FLOAT_EQUALS _HasStem 1
+		{
+			Material COPY_COLOR _StemColor _SecondColor
+		}
+
+		Material SET_FLOAT _SecondSmoothnessValue 0
+	
+		Texture PropName _MainMaskTex
+		Texture SetRed NONE
+		Texture SetGreen NONE
+		Texture SetBlue GET_GRAY _FlowerMask ACTION_ONE_MINUS
+		Texture SetAlpha NONE
+		Utility START_TEXTURE_PACKING
+
+		Material SET_FLOAT _DetailMode 1
+		Material SET_FLOAT _DetailBlendMode 1
+		Material SET_FLOAT _DetailAlphaMode 0
+		
+		Material SET_FLOAT _DetailMeshMode 0
+		Material SET_FLOAT _DetailMaskMode 0
+
+		Material SET_FLOAT _DetailBlendMinValue 0
+		Material SET_FLOAT _DetailBlendMaxValue 1
+	}
+}
+
+if SHADER_PATH_CONTAINS PA_Trims
+{
+	Material SET_FLOAT _RenderNormals 2
+
+	Material COPY_TEX _ColorMap _MainAlbedoTex
+	Material COPY_TEX _NormalMap _MainNormalTex
+
+	Material COPY_FLOAT _NormalIntensity _MainNormalValue
+	Material COPY_FLOAT _MetallicIntensity _MainMetallicValue
+	Material COPY_FLOAT _AOIntensity _MainOcclusionValue
+
+	Material COPY_FLOAT_AS_VECTOR_X _Texturetiling _MainUVs
+	Material COPY_FLOAT_AS_VECTOR_Y _Texturetiling _MainUVs
+
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_BLUE _ORMMap
+	Texture SetGreen GET_RED _ORMMap
+	Texture SetBlue GET_GRAY _HeightMap
+	Texture SetAlpha GET_GREEN _ORMMap ACTION_ONE_MINUS
+	Utility START_TEXTURE_PACKING
+}
+
+if SHADER_PATH_CONTAINS PA_SurfaceORM
+{
+	if SHADER_PATH_CONTAINS Cutout
+	{
+		Material SET_FLOAT _RenderClip 1
+		Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+	}
+
+	Material SET_FLOAT _RenderNormals 2
+
+	Material COPY_TEX _ColorMap _MainAlbedoTex
+	Material COPY_TEX _NormalMap _MainNormalTex
+	
+	Material COPY_FLOAT _NormalIntensity _MainNormalValue
+	Material COPY_FLOAT _MetallicIntensity _MainMetallicValue
+	Material COPY_FLOAT _AOIntensity _MainOcclusionValue
+
+	Material COPY_TEX _EmissiveMap _EmissiveTex
+	Material COPY_COLOR _EmissiveColor _EmissiveColor
+	Material COPY_FLOAT _EmissiveIntensity _EmissiveIntensityValue
+
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_BLUE _ORMMap
+	Texture SetGreen GET_RED _ORMMap
+	Texture SetBlue GET_GRAY _HeightMap
+	Texture SetAlpha GET_GREEN _ORMMap ACTION_ONE_MINUS
+	Utility START_TEXTURE_PACKING
+}
+
+if SHADER_PATH_CONTAINS PA_TilingPOM
+{
+	Material COPY_TEX _DiffuseMap _MainAlbedoTex
+	Material COPY_TEX _NormalMap _MainNormalTex
+
+	Material COPY_VECTOR _Color02 _MainColor
+	Material COPY_FLOAT _NormalIntensity _MainNormalValue
+	Material COPY_FLOAT _MetallicIntensity _MainMetallicValue
+	Material COPY_FLOAT _AOIntensity _MainOcclusionValue
+
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_BLUE _ORMMap
+	Texture SetGreen GET_RED _ORMMap
+	Texture SetBlue GET_GRAY _MaskMap
+	Texture SetAlpha GET_GREEN _ORMMap ACTION_ONE_MINUS
+	Utility START_TEXTURE_PACKING
+
+	if MATERIAL_KEYWORD_ENABLED _USESCUSTOMCOLOR_ON
+	{
+		Material COPY_TEX _DiffuseMap _SecondAlbedoTex
+	
+		Material SET_FLOAT _SecondUVsMode 0
+		Material COPY_FLOAT_AS_VECTOR_X _Texturetiling _SecondUVs
+		Material COPY_FLOAT_AS_VECTOR_Y _Texturetiling _SecondUVs
+
+		Material COPY_VECTOR _Color01 _SecondColor
+		Material SET_FLOAT _SecondAlbedoValue 0.7
+		Material SET_FLOAT _SecondSmoothnessValue 0.3
+
+		Material SET_FLOAT _DetailMode 1
+		Material SET_FLOAT _DetailBlendMode 0
+		Material SET_FLOAT _DetailAlphaMode 1
+
+		Material SET_FLOAT _DetailMaskMode 0
+
+		Material SET_FLOAT _DetailBlendMinValue 0.4
+		Material SET_FLOAT _DetailBlendMaxValue 0.6
+	}	
+}
+
+if SHADER_PATH_CONTAINS PA_TreeWind
+{
+	Material SET_FLOAT _RenderNormals 2
+
+	if !MATERIAL_KEYWORD_ENABLED _USEDFORTRUNK_ON
+	{
+		Material SET_SHADER SHADER_SUBSURFACE_PLANT
+		Material SET_FLOAT _RenderCull 0
+		Material SET_FLOAT _RenderClip 1
+		Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+		
+		Material SET_FLOAT _FadeGlancingValue 1
+		
+		Material COPY_TEX _FoliageColorMap _MainAlbedoTex
+		Material COPY_TEX _FoliageNormalMap _MainNormalTex
+		
+		Material COPY_VECTOR _FoliageColorTop _GradientColorOne
+		Material COPY_VECTOR _FoliageColorBottom _GradientColorTwo
+	}
+	
+	if MATERIAL_KEYWORD_ENABLED _USEDFORTRUNK_ON
+	{
+		Include Use Default Bark Settings
+		
+		Material COPY_TEX _ColorMap _MainAlbedoTex
+		Material COPY_TEX _NormalMap _MainNormalTex
+		
+		Material COPY_FLOAT _NormalIntensity _MainNormalValue
+		Material COPY_FLOAT _MetallicIntensity _MainMetallicValue
+		Material COPY_FLOAT _AOIntensity _MainOcclusionValue
+
+		Material COPY_TEX _EmissiveMap _EmissiveTex
+		Material COPY_COLOR _EmissiveColor _EmissiveColor
+		Material COPY_FLOAT _EmissiveIntensity _EmissiveIntensityValue
+
+		Texture PropName _MainMaskTex
+		Texture SetRed GET_BLUE _ORMMap
+		Texture SetGreen GET_RED _ORMMap
+		Texture SetBlue GET_GRAY _HeightMap
+		Texture SetAlpha GET_GREEN _ORMMap ACTION_ONE_MINUS
+		Utility START_TEXTURE_PACKING
+	}
+}
+
+if SHADER_PATH_CONTAINS PA_FoliageBillboard
+{
+	Include Use Default Cross Settings
+
+	Material COPY_TEX _BillboardColorMap _MainAlbedoTex
+	Material SET_FLOAT _MainAlbedoValue 0
+
+	Material COPY_COLOR _RColorTop _MainColor
+	Material COPY_COLOR _GColor _SecondColor
+	
+	Material SET_FLOAT _SecondMaskMinValue 1
+	Material SET_FLOAT _SecondMaskMaxValue 1
+	
+	Material SET_FLOAT _DetailMode 1
+	Material SET_FLOAT _DetailBlendMode 1
+	Material SET_FLOAT _DetailAlphaMode 0
+		
+	Material SET_FLOAT _DetailMaskMode 0
+		
+	Material SET_FLOAT _DetailBlendMinValue 0.4
+	Material SET_FLOAT _DetailBlendMaxValue 0.6
+	
+	Texture PropName _MainMaskTex
+	Texture SetRed NONE
+	Texture SetGreen NONE
+	Texture SetBlue GET_GREEN _BillboardColorMap
+	Texture SetAlpha NONE
+	Utility START_TEXTURE_PACKING
+}
+
+

@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 431 - Glameow
+  m_EditorClassIdentifier: 
+  info:
+    pID: 431
+    pokemonName: Glameow
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 51f25441cb9956d41ae3ec42406a766b, type: 2}
+    type2: {fileID: 11400000, guid: 19cf4e3924e28b64a8d6004e5cd56209, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Fake Out
+      move: {fileID: 11400000, guid: d14c357f0473c174d99990cac1e03e26, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5 - Scratch
+      move: {fileID: 11400000, guid: a58015051c39ad24ea082e76c0debc5f, type: 2}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8 - Growl
+      move: {fileID: 11400000, guid: f7266d8e1f26280419ae49df8e5c588c, type: 2}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13 - Hypnosis
+      move: {fileID: 11400000, guid: 6cf32b28f5051cd47955fbf4989c418a, type: 2}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17 - Feint Attack
+      move: {fileID: 11400000, guid: 7d49e85c33c5d14408c10d95dc43b137, type: 2}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20 - Fury Swipes
+      move: {fileID: 11400000, guid: 9234b6cf82dfc6e4e8eb751ccc55e343, type: 2}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25 - Charm
+      move: {fileID: 11400000, guid: dbe32bf529bc6a441b4a1a6204a22052, type: 2}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29 - Assist
+      move: {fileID: 11400000, guid: 741a4f004fe597444ade5fb0222a114a, type: 2}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32 - Captivate
+      move: {fileID: 11400000, guid: 03e00158f8d01a247928ad21b2ad88b2, type: 2}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37 - Slash
+      move: {fileID: 11400000, guid: f965916dd5d346a41acc7bb2011a2727, type: 2}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41 - Sucker Punch
+      move: {fileID: 11400000, guid: a2bb703f69501b9488c2738a9b13e154, type: 2}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44 - Attract
+      move: {fileID: 11400000, guid: cccae28b257a7d24083e09cdda1cbb25, type: 2}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48 - Hone Claws
+      move: {fileID: 11400000, guid: 41cf5a3612f9937449eeffb04e13d9c1, type: 2}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50 - Play Rough
+      move: {fileID: 11400000, guid: 584071b953f27134bbf8448ea7db0233, type: 2}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 49
+      attack: 55
+      defense: 0
+      specialAttack: 42
+      specialDefense: 0
+      speed: 85
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 31a31094a97ac154ba10184574be7b5b, type: 3}
+    profile:
+      pokedexSpecies: "Catty Pok\xE9mon"
+      pokedexDescription: "When it\u2019s happy, Glameow demonstrates beautiful movements
+        of its tail, like a dancing ribbon."
+      height: 0.5 m
+      weight: 3.9 kg
+      eggGroups:
+      - Field
+      genderRatio: 25:75
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

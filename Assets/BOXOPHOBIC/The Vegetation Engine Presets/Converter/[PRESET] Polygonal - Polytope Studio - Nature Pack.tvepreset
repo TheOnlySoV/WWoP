@@ -1,0 +1,94 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Polytope Studio
+InfoPreset Use this preset to convert Polytope Studio -  Lowpoly Environment - Nature Pack assets.
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/lowpoly-environment-nature-pack-185195
+
+InfoWarning Please note, the Polytope props are not currently supported!
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputOptions Grass/Flowers/Plants/Willows/Trees 4
+OutputPipelines Standard/Universal
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Flowers
+{
+	InfoMessage Please note, the converter will use the Albedo texture instead of the custom flower coloring!
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Flowers
+{
+	Include Use Default Flowers Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Plants
+{
+	Mesh SetVariation GET_MASK_FROM_CHANNEL 1
+	Mesh SetOcclusion NONE
+	Mesh SetDetailMask NONE
+	Mesh SetDetailCoord NONE
+
+	Mesh SetDetailCoord NONE
+
+	Mesh SetHeight GET_MASK_FROM_CHANNEL 0
+	Mesh SetMotion2 GET_MASK_FROM_CHANNEL 2
+	Mesh SetMotion3 GET_MASK_FROM_CHANNEL 2
+}
+
+if OUTPUT_OPTION_CONTAINS Trees
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_PROCEDURAL 6
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 16
+	Mesh SetMotion3 GET_MASK_FROM_CHANNEL 0
+
+	Mesh SetPivots NONE
+}
+
+if OUTPUT_OPTION_CONTAINS Willows
+{
+	Mesh SetVariation GET_MASK_FROM_CHANNEL 1
+	Mesh SetOcclusion NONE
+	Mesh SetDetailMask NONE
+	Mesh SetDetailCoord NONE
+
+	Mesh SetDetailCoord NONE
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_FROM_CHANNEL 2
+	Mesh SetMotion3 GET_MASK_FROM_CHANNEL 2
+}
+
+*******************************************************************
+
+Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+
+Material SET_FLOAT _RenderNormals 2
+
+Material COPY_TEX_FIRST_VALID _MainAlbedoTex
+
+if SHADER_NAME_CONTAINS Opaque
+{
+	Include Use Default Bark Settings
+	
+	if OUTPUT_OPTION_CONTAINS Willows
+	{
+		Material SET_FLOAT _MotionValue_20 0
+	}
+}

@@ -1,0 +1,195 @@
+// Updated 27.12.2021
+
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Raygeas Highlands
+InfoPreset Use this preset to convert Raygeas Highlands assets.
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/fantasy/highlands-stylized-environment-255775
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputOptions Props/Clover/Grass/Flowers/Plants/Trees 5
+
+InfoMessage Please note, some vegetation prefabs use gradient colors for tinting and the colors need to be adjusted after conversion!
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	Include Use Default Props Masks
+	
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+}
+
+if OUTPUT_OPTION_CONTAINS Clover
+{
+	Include Use Default Grass Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Flowers
+{
+	Include Use Default Flowers Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Plants
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_PROCEDURAL 6
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 15
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 5
+	Mesh SetMotion3 GET_MASK_PROCEDURAL 5
+
+	Mesh SetPivots NONE
+}
+
+if OUTPUT_OPTION_CONTAINS Trees
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_PROCEDURAL 6
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 6
+	Mesh SetMotion3 GET_MASK_PROCEDURAL 6
+
+	Mesh SetPivots NONE
+}
+
+*******************************************************************
+
+if SHADER_NAME_CONTAINS Foliage
+{
+	Material SET_FLOAT _RenderNormals 2
+	Material SET_FLOAT _RenderSpecular 0
+
+	//Material SET_FLOAT _FadeGlancingValue 1
+
+	Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+
+	Material COPY_TEX _Albedo _MainAlbedoTex
+	Material COPY_TEX _Normal _MainNormalTex
+	Material COPY_TEX _MetallicSmoothness _MainMaskTex
+	Material COPY_FLOAT_AS_VECTOR_X _Tiling _MainUVs
+	Material COPY_FLOAT_AS_VECTOR_Y _Tiling _MainUVs
+
+	if MATERIAL_FLOAT_EQUALS _Color2Enable 0
+	{
+		Material COPY_COLOR _MainColor _MainColor
+	}
+	
+	if MATERIAL_FLOAT_EQUALS _Color2Enable 1
+	{
+		Material COPY_COLOR _SecondColor _GradientColorOne
+		Material COPY_COLOR _MainColor _GradientColorTwo
+		Material SET_FLOAT _GradientMinValue 0.2
+	}
+
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+	Material COPY_COLOR _MainColor _SubsurfaceColor
+
+	// Combine Texture Channels
+	Texture PropName _MainMaskTex
+	Texture SetRed NONE
+	Texture SetGreen NONE
+	Texture SetBlue NONE
+	Texture SetAlpha GET_RED _SmoothnessTexture
+	Utility START_TEXTURE_PACKING
+}
+
+if SHADER_NAME_CONTAINS Surface
+{
+	Include Use Default Bark Settings
+
+	Material COPY_COLOR _Color _MainColor
+	Material COPY_TEX _Albedo _MainAlbedoTex
+	Material COPY_TEX _Normal _MainNormalTex
+	Material COPY_TEX _MetallicSmoothness _MainMaskTex
+	Material COPY_FLOAT_AS_VECTOR_X _Tiling _MainUVs
+	Material COPY_FLOAT_AS_VECTOR_Y _Tiling _MainUVs
+
+	Material COPY_FLOAT _NormalScale _MainNormalValue
+	Material COPY_FLOAT _Metallic _MainMetallicValue
+	Material COPY_FLOAT _SurfaceSmoothness _MainSmoothnessValue
+
+	Material SET_FLOAT _MainOcclusionValue 0
+
+	if MATERIAL_KEYWORD_ENABLED _COVERAGEON_ON
+	{
+		Material COPY_COLOR _CoverageColor _SecondColor
+		Material COPY_TEX _CoverageAlbedo _SecondAlbedoTex
+		Material COPY_TEX _CoverageNormal _SecondNormalTex
+		
+		Material SET_FLOAT _SecondUVsMode 0
+		Material COPY_ST_AS_VECTOR _CoverageAlbedo _SecondUVs
+	
+		// Set Detail properties
+		Material SET_FLOAT _DetailMode 1
+		Material SET_FLOAT _DetailBlendMode 1
+		
+		if MATERIAL_FLOAT_EQUALS _OverlayMethod 0
+		{
+			Material SET_FLOAT _DetailMeshMode 1
+			Material SET_FLOAT _DetailMaskMode 1
+
+			
+			Material SET_FLOAT _DetailBlendMinValue 0.65
+			Material SET_FLOAT _DetailBlendMaxValue 0.8
+		}
+		
+		if MATERIAL_FLOAT_EQUALS _OverlayMethod 1
+		{
+			Material SET_FLOAT _DetailMeshMode 0
+			Material SET_FLOAT _DetailMaskMode 1
+			
+			Material SET_FLOAT _DetailBlendMinValue 0.7
+			Material SET_FLOAT _DetailBlendMaxValue 1.0
+		}
+	}
+
+	// Combine Texture Channels
+	if MATERIAL_KEYWORD_ENABLED _SMOOTHNESSSOURCE_ALBEDO_ALPHA
+	{
+		Texture PropName _MainMaskTex
+		Texture SetRed GET_RED _MetallicSmoothness
+		Texture SetGreen NONE
+		Texture SetBlue NONE
+		Texture SetAlpha GET_ALPHA _Albedo
+		Utility START_TEXTURE_PACKING
+	}
+}
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	Include Use Default Props Settings
+}
+
+if OUTPUT_OPTION_CONTAINS Clovers
+{
+	Include Use Default Grass Settings
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Settings
+}
+
+if OUTPUT_OPTION_CONTAINS Flowers
+{
+	Include Use Default Flowers Settings
+	
+	Material SET_FLOAT _SubsurfaceValue 0
+}

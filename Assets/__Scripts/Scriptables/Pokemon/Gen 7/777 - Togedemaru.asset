@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 777 - Togedemaru
+  m_EditorClassIdentifier: 
+  info:
+    pID: 777
+    pokemonName: Togedemaru
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 67faf27f0b4b47649a917ef8319cb623, type: 2}
+    type2: {fileID: 11400000, guid: 198106eb53e059c44893c90d6fbd830f, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Thunder Shock
+      move: {fileID: 11400000, guid: 8ef5255f7ae485b44892f5f48c34794e, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5 - Defense Curl
+      move: {fileID: 11400000, guid: bed9b1bf76cf4e04baddc78b01e315bd, type: 2}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9 - Rollout
+      move: {fileID: 11400000, guid: 0b9d61662b90471408dd8530997338d0, type: 2}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13 - Charge
+      move: {fileID: 11400000, guid: 10f3cc1044855ac499047de2d4754401, type: 2}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17 - Spark
+      move: {fileID: 11400000, guid: eee2dae4284c819479288a9c2812e23d, type: 2}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21 - Nuzzle
+      move: {fileID: 11400000, guid: ef6a362c763f5614c91564c3b9f481c0, type: 2}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25 - Magnet Rise
+      move: {fileID: 11400000, guid: 550b559a2c60d7443b77d1039814f3ee, type: 2}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29 - Discharge
+      move: {fileID: 11400000, guid: 514037e341f34dc48a0d182902fbc768, type: 2}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37 - Electric Terrain
+      move: {fileID: 11400000, guid: cda75859e9550e9468ca4bb28b6c3451, type: 2}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41 - Wild Charge
+      move: {fileID: 11400000, guid: 3852f542302b9da45b9343655e5b3e65, type: 2}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45 - Pin Missile
+      move: {fileID: 11400000, guid: 3711eda1f1e439344a7c0b89dc8950c4, type: 2}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49 - Spiky Shield
+      move: {fileID: 11400000, guid: f2681c8d6e508884aafc6287773f0c5b, type: 2}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53 - Fell Stinger
+      move: {fileID: 11400000, guid: 67d3a9f0ae005a2439837db176210ead, type: 2}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 65
+      attack: 98
+      defense: 0
+      specialAttack: 40
+      specialDefense: 0
+      speed: 96
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 0}
+    profile:
+      pokedexSpecies: "Roly-Poly Pok\xE9mon"
+      pokedexDescription: Its capacity to produce electricity is somewhat limited,
+        so it gets charged up by letting lightning strike it!
+      height: 0.3 m
+      weight: 3.3 kg
+      eggGroups:
+      - Field
+      - Fairy
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

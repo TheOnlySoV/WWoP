@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 245 - Suicune
+  m_EditorClassIdentifier: 
+  info:
+    pID: 245
+    pokemonName: Suicune
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: cdf5f06bef5e6774490c9a937a70c801, type: 2}
+    type2: {fileID: 11400000, guid: 19cf4e3924e28b64a8d6004e5cd56209, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Sheer Cold
+      move: {fileID: 11400000, guid: 474a72b7d32187c449b2c82ac5bc2fc3, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8 - Bubble Beam
+      move: {fileID: 11400000, guid: 2877afbcc598775458f045c1b9c8933a, type: 2}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15 - Rain Dance
+      move: {fileID: 11400000, guid: 11ef08b6bb8c3b14489d273e03be5234, type: 2}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22 - Gust
+      move: {fileID: 11400000, guid: 47c3287edcf422b43a4a4ed8b75cfa51, type: 2}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29 - Aurora Beam
+      move: {fileID: 11400000, guid: df2492f8b3f2fd64ba6eb42698b4db8c, type: 2}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36 - Mist
+      move: {fileID: 11400000, guid: 4a59cb428bdfd2341a81d075c5798546, type: 2}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43 - Mirror Coat
+      move: {fileID: 11400000, guid: 698710bd7d1193e4dbdcf2507fd1fa5a, type: 2}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50 - Ice Fang
+      move: {fileID: 11400000, guid: 0f6a14c233dd2434a9cbc9087e28d400, type: 2}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57 - Tailwind
+      move: {fileID: 11400000, guid: 9a99640866820f94984315735bae7c21, type: 2}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64 - Extrasensory
+      move: {fileID: 11400000, guid: 9f4768a933588d54aba7c83bcd1de322, type: 2}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71 - Hydro Pump
+      move: {fileID: 11400000, guid: eca6fbd3dff76754fbb1146cb63eea1f, type: 2}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78 - Calm Mind
+      move: {fileID: 11400000, guid: 80f70293ff3e422438c2c71ffdb259e5, type: 2}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85 - Blizzard
+      move: {fileID: 11400000, guid: 2b7bdae4e666b8d478b058a9a4ff6bdf, type: 2}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 100
+      attack: 75
+      defense: 0
+      specialAttack: 90
+      specialDefense: 0
+      speed: 85
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: c5e3536d6917c1d448a3a378b3247dbb, type: 3}
+    profile:
+      pokedexSpecies: "Aurora Pok\xE9mon"
+      pokedexDescription: "Suicune embodies the compassion of a pure spring of water.
+        It runs across the land with gracefulness. This Pok\xE9mon has the power
+        to purify dirty water."
+      height: 2 m
+      weight: 187 kg
+      eggGroups:
+      - Undiscovered
+      genderRatio: Genderless
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

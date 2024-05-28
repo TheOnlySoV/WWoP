@@ -1,0 +1,260 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 780 - Drampa
+  m_EditorClassIdentifier: 
+  info:
+    pID: 780
+    pokemonName: Drampa
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 51f25441cb9956d41ae3ec42406a766b, type: 2}
+    type2: {fileID: 11400000, guid: 3b3d5c8dc6e549c42b71e404335ad36a, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Play Nice
+      move: {fileID: 11400000, guid: d2e847d170d8f1b40baee84ec3fee6aa, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5 - Twister
+      move: {fileID: 11400000, guid: aff691ddd4645834da08680f52e10199, type: 2}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9 - Protect
+      move: {fileID: 11400000, guid: 30db17b3e898a1a43945ac6815a44c67, type: 2}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13 - Glare
+      move: {fileID: 11400000, guid: 42a50a80c54d7b148a7eeb19f193827e, type: 2}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17 - Light Screen
+      move: {fileID: 11400000, guid: 2ac5edeb953610c408bb1c3af2e58842, type: 2}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21 - Dragon Rage
+      move: {fileID: 11400000, guid: fcc874755877dc945aeed25d3c1a5963, type: 2}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25 - Natural Gift
+      move: {fileID: 11400000, guid: a3daa4b01af5a30499923975d1c09581, type: 2}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29 - Dragon Breath
+      move: {fileID: 11400000, guid: 04c53600503b34f44bf72cb8c836e948, type: 2}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33 - Safeguard
+      move: {fileID: 11400000, guid: 839aea3b8340f014f8e342eb26f220ff, type: 2}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37 - Extrasensory
+      move: {fileID: 11400000, guid: 9f4768a933588d54aba7c83bcd1de322, type: 2}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41 - Dragon Pulse
+      move: {fileID: 11400000, guid: c5efeb29896676d49ad8b384d53d7cb3, type: 2}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45 - Fly
+      move: {fileID: 11400000, guid: 8b313c131c834b140898b7a5503a417a, type: 2}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49 - Hyper Voice
+      move: {fileID: 11400000, guid: e87dff4aead55aa4398f3d12bafc2f0f, type: 2}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53 - Outrage
+      move: {fileID: 11400000, guid: e22fb6515d788d34d970ca095d197db3, type: 2}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 78
+      attack: 60
+      defense: 0
+      specialAttack: 135
+      specialDefense: 0
+      speed: 36
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 0}
+    profile:
+      pokedexSpecies: "Placid Pok\xE9mon"
+      pokedexDescription: "It appears in towns and plays with the children. Drampa
+        will protect kids when they\u2019re in danger, so their moms don\u2019t have
+        to worry."
+      height: 3 m
+      weight: 185 kg
+      eggGroups:
+      - Monster
+      - Dragon
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

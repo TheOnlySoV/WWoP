@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 560 - Scrafty
+  m_EditorClassIdentifier: 
+  info:
+    pID: 560
+    pokemonName: Scrafty
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: cd364cf81fdfaa446adc23a8cb81a001, type: 2}
+    type2: {fileID: 11400000, guid: 0775129509eb422448a05afaf12d83df, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Sand Attack
+      move: {fileID: 11400000, guid: 8c26d7753b2b43243a2da4a607892b68, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5 - Sand Attack
+      move: {fileID: 11400000, guid: 8c26d7753b2b43243a2da4a607892b68, type: 2}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9 - Feint Attack
+      move: {fileID: 11400000, guid: 7d49e85c33c5d14408c10d95dc43b137, type: 2}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12 - Swagger
+      move: {fileID: 11400000, guid: fa272971458aba74d85b0dc90fc7fbec, type: 2}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16 - Low Kick
+      move: {fileID: 11400000, guid: f4511be7c2dc1cf41b5157701a345c19, type: 2}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20 - Payback
+      move: {fileID: 11400000, guid: 7cb6c90606bac7248bfec4d7e047fbb6, type: 2}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23 - Brick Break
+      move: {fileID: 11400000, guid: 039991eb938d51c48b87984110eada43, type: 2}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27 - Chip Away
+      move: {fileID: 11400000, guid: 6b45f3a24015b054882e82122f111c8d, type: 2}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29
+      move: {fileID: 0}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31 - High Jump Kick
+      move: {fileID: 11400000, guid: 037b9c722b0a8664fab253adae87ab2e, type: 2}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34 - Scary Face
+      move: {fileID: 11400000, guid: d53bb9feeb07f684eb8a84909f2650ca, type: 2}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38 - Crunch
+      move: {fileID: 11400000, guid: 9f5975ad65a7f984f84bc3c698b055a7, type: 2}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45 - Facade
+      move: {fileID: 11400000, guid: f757ed4681c05ee4886e143b8ed1cbe7, type: 2}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51 - Rock Climb
+      move: {fileID: 11400000, guid: 9454deeccfa4dea41b4e85583704d186, type: 2}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58 - Focus Punch
+      move: {fileID: 11400000, guid: ac6a03bf786c68747a7ec5463d078723, type: 2}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65 - Head Smash
+      move: {fileID: 11400000, guid: a7078dd2753a51b438fcf0322141f7c3, type: 2}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 65
+      attack: 90
+      defense: 0
+      specialAttack: 45
+      specialDefense: 0
+      speed: 58
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: a560a3a878e55ad4a873c5d898cc9f33, type: 3}
+    profile:
+      pokedexSpecies: "Hoodlum Pok\xE9mon"
+      pokedexDescription: It taunts its opponents by spitting. It has a certain territory
+        that it never leaves its whole life long.
+      height: 1.1 m
+      weight: 30 kg
+      eggGroups:
+      - Field
+      - Dragon
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

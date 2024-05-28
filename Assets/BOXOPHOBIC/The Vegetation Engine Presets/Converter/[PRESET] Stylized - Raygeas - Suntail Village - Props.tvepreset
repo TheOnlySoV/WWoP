@@ -1,0 +1,59 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Raygeas Suntail Props
+InfoPreset Use this preset to convert Raygeas Suntail Village assets.
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/fantasy/suntail-village-203303
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputTransforms USE_ORIGINAL_TRANSFORMS
+
+Include Use Default Props Masks
+
+*******************************************************************
+
+Include Use Default Props Settings
+
+Material COPY_COLOR _Color _MainColor
+Material COPY_TEX _Albedo _MainAlbedoTex
+Material COPY_TEX _Normal _MainNormalTex
+Material COPY_TEX _MetallicSmoothness _MainMaskTex
+Material COPY_FLOAT_AS_VECTOR_X _Tiling _MainUVs
+Material COPY_FLOAT_AS_VECTOR_Y _Tiling _MainUVs
+
+Material COPY_FLOAT _NormalScale _MainNormalValue
+Material COPY_FLOAT _Metallic _MainMetallicValue
+Material COPY_FLOAT _SurfaceSmoothness _MainSmoothnessValue
+
+Material SET_FLOAT _MainOcclusionValue 0
+
+if MATERIAL_HAS_TEX _Emission
+{
+	Material COPY_COLOR _EmissionColor _EmissiveColor
+
+	Material COPY_FLOAT_AS_VECTOR_X _Tiling _EmissiveUVs
+	Material COPY_FLOAT_AS_VECTOR_Y _Tiling _EmissiveUVs
+		
+	Texture PropName _EmissiveTex
+	Texture SetRed GET_GRAY _Emission
+	Texture SetGreen GET_GRAY _Emission
+	Texture SetBlue GET_GRAY _Emission
+	Texture SetAlpha NONE
+	Utility START_TEXTURE_PACKING
+}
+
+// Combine Texture Channels
+if MATERIAL_KEYWORD_ENABLED _SMOOTHNESSSOURCE_ALBEDO_ALPHA
+{
+	Texture PropName _MainMaskTex
+	Texture SetRed GET_RED _MetallicSmoothness
+	Texture SetGreen NONE
+	Texture SetBlue NONE
+	Texture SetAlpha GET_ALPHA _Albedo
+	Utility START_TEXTURE_PACKING
+}

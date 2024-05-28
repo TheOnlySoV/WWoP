@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 323 - Camerupt
+  m_EditorClassIdentifier: 
+  info:
+    pID: 323
+    pokemonName: Camerupt
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 29da0cf82e118ea4893cfcbb48cf59eb, type: 2}
+    type2: {fileID: 11400000, guid: 9c0a8402d7386f64dbaf3ced4760fde9, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Tackle
+      move: {fileID: 11400000, guid: c0835a22474352241b551e7811e7bc06, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8 - Focus Energy
+      move: {fileID: 11400000, guid: f79eb0bb77eddae4597943a96f971a42, type: 2}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12 - Magnitude
+      move: {fileID: 11400000, guid: fb4fbaafb54786148980435a5c234a5f, type: 2}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15 - Flame Burst
+      move: {fileID: 11400000, guid: e7d3f29a9bbb51f4097faca2e131bf41, type: 2}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19 - Amnesia
+      move: {fileID: 11400000, guid: 0922489cb8fc3b94aa645b1227ed092f, type: 2}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22 - Lava Plume
+      move: {fileID: 11400000, guid: 374ed45193d6d26479ad2e990f8785d2, type: 2}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24
+      move: {fileID: 0}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26 - Earth Power
+      move: {fileID: 11400000, guid: 111304d99ce17d64abc0990bb074d3cc, type: 2}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28
+      move: {fileID: 0}
+    - name: Level 29 - Curse
+      move: {fileID: 11400000, guid: 52f9359398937a444b9aa1cff03bf721, type: 2}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31 - Take Down
+      move: {fileID: 11400000, guid: 4cf1f8fb185047a44896fd550ffcbce5, type: 2}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39 - Yawn
+      move: {fileID: 11400000, guid: 614e7355b7101da4a8e6f273c8216a6a, type: 2}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46 - Earthquake
+      move: {fileID: 11400000, guid: d0167f96aedebd54581467f589aac0e9, type: 2}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52 - Eruption
+      move: {fileID: 11400000, guid: ba9a81eba02dcef43bb01ccaf9030e36, type: 2}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59 - Fissure
+      move: {fileID: 11400000, guid: c9d51bfb5ae6e8e438b3e9319cacb00a, type: 2}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 70
+      attack: 100
+      defense: 0
+      specialAttack: 105
+      specialDefense: 0
+      speed: 40
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 4163775b1680caa4f973bb25bcfbc2d4, type: 3}
+    profile:
+      pokedexSpecies: "Eruption Pok\xE9mon"
+      pokedexDescription: "The humps on Camerupt\u2019s back are formed by a transformation
+        of its bones. They sometimes blast out molten magma. This Pok\xE9mon apparently
+        erupts often when it is enraged."
+      height: 1.9 m
+      weight: 220 kg
+      eggGroups:
+      - Field
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

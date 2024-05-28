@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 689 - Barbaracle
+  m_EditorClassIdentifier: 
+  info:
+    pID: 689
+    pokemonName: Barbaracle
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 8981461f1e1fb114688b3ef95aa0629e, type: 2}
+    type2: {fileID: 11400000, guid: cdf5f06bef5e6774490c9a937a70c801, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Water Gun
+      move: {fileID: 11400000, guid: 41f3f334975b40746a737fea87acd314, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4 - Water Gun
+      move: {fileID: 11400000, guid: 41f3f334975b40746a737fea87acd314, type: 2}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7 - Withdraw
+      move: {fileID: 11400000, guid: 25636ac1ef0f0d44daa53fb7d0cecad8, type: 2}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10 - Fury Swipes
+      move: {fileID: 11400000, guid: 9234b6cf82dfc6e4e8eb751ccc55e343, type: 2}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13 - Slash
+      move: {fileID: 11400000, guid: f965916dd5d346a41acc7bb2011a2727, type: 2}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20 - Clamp
+      move: {fileID: 11400000, guid: cb16a489e0be21343a88b9515522f39a, type: 2}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24 - Rock Polish
+      move: {fileID: 11400000, guid: 4b65286279eac5b43b07b1188dfc880f, type: 2}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28 - Ancient Power
+      move: {fileID: 11400000, guid: f16c8309d606e6248b6a36a0223389b8, type: 2}
+    - name: Level 29
+      move: {fileID: 0}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32 - Hone Claws
+      move: {fileID: 11400000, guid: 41cf5a3612f9937449eeffb04e13d9c1, type: 2}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37 - Fury Cutter
+      move: {fileID: 11400000, guid: d913d2a64dbf89c40b87592654603321, type: 2}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44 - Night Slash
+      move: {fileID: 11400000, guid: 7ab4315e4d752824cb071c8f5ae9f5a2, type: 2}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48 - Razor Shell
+      move: {fileID: 11400000, guid: 64e22400129868948b105faa9dc92931, type: 2}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54
+      move: {fileID: 0}
+    - name: Level 55 - Cross Chop
+      move: {fileID: 11400000, guid: 8ba7444e9879cc4439bd5cd8a4ecd577, type: 2}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60 - Stone Edge
+      move: {fileID: 11400000, guid: 6ab2dbd9fb0f4f74b83f6074e0c4d58c, type: 2}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65 - Skull Bash
+      move: {fileID: 11400000, guid: 478553e11da26cd48ad9a0c617ad52b7, type: 2}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 72
+      attack: 105
+      defense: 0
+      specialAttack: 54
+      specialDefense: 0
+      speed: 68
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 28d0ecff2455c084ea49c3c2cafef52d, type: 3}
+    profile:
+      pokedexSpecies: "Collective Pok\xE9mon"
+      pokedexDescription: "Barbaracle\u2019s legs and hands have minds of their own,
+        and they will move independently. But they usually follow the head\u2019s
+        orders."
+      height: 1.3 m
+      weight: 96 kg
+      eggGroups:
+      - Water 3
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

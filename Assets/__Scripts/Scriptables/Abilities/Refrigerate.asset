@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443e341ac4ef61c4c892047239776b2a, type: 3}
+  m_Name: Refrigerate
+  m_EditorClassIdentifier: 
+  description: Turns all of this Pokemon's Normal-typed attacks into Ice-typed and
+    deal 1.3x damage. Does not affect Hidden Power.

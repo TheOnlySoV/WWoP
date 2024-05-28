@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b67eb10b79a6645b001272b8d0bbdd, type: 3}
+  m_Name: Flying
+  m_EditorClassIdentifier: 
+  typeName: Flying
+  type: 0
+  typeColor: {r: 0.7877358, g: 0.96905845, b: 1, a: 1}
+  typeSprites: []
+  superEffectiveAgainst:
+  - {fileID: 11400000, guid: 87ef2df4d3d1ec245a6075e6542a56a9, type: 2}
+  - {fileID: 11400000, guid: 0775129509eb422448a05afaf12d83df, type: 2}
+  - {fileID: 11400000, guid: 2d5aa97aff29e2a4e9cc63c08551efd1, type: 2}
+  notVeryEffectiveAgainst:
+  - {fileID: 11400000, guid: 67faf27f0b4b47649a917ef8319cb623, type: 2}
+  - {fileID: 11400000, guid: 8981461f1e1fb114688b3ef95aa0629e, type: 2}
+  - {fileID: 11400000, guid: 198106eb53e059c44893c90d6fbd830f, type: 2}
+  neutralAgainst:
+  - {fileID: 11400000, guid: cd364cf81fdfaa446adc23a8cb81a001, type: 2}
+  - {fileID: 11400000, guid: 3b3d5c8dc6e549c42b71e404335ad36a, type: 2}
+  - {fileID: 11400000, guid: 2cc5d69cb7f354e4aad90f84171ae49a, type: 2}
+  - {fileID: 11400000, guid: 29da0cf82e118ea4893cfcbb48cf59eb, type: 2}
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: a3bdc86fbc0b3e34891126ec68c08b62, type: 2}
+  - {fileID: 11400000, guid: 9c0a8402d7386f64dbaf3ced4760fde9, type: 2}
+  - {fileID: 11400000, guid: d7a3bee17a3e2e046a8911f209ff723f, type: 2}
+  - {fileID: 11400000, guid: 51f25441cb9956d41ae3ec42406a766b, type: 2}
+  - {fileID: 11400000, guid: f11f4a55e3d1c2c4b9130c1f822def5f, type: 2}
+  - {fileID: 11400000, guid: 8af67009ec3d4114baf817bfd7b3b22b, type: 2}
+  - {fileID: 11400000, guid: cdf5f06bef5e6774490c9a937a70c801, type: 2}
+  noEffect: []
+  fixNeutralList: 0

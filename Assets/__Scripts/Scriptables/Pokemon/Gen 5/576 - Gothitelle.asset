@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 576 - Gothitelle
+  m_EditorClassIdentifier: 
+  info:
+    pID: 576
+    pokemonName: Gothitelle
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 8af67009ec3d4114baf817bfd7b3b22b, type: 2}
+    type2: {fileID: 11400000, guid: 19cf4e3924e28b64a8d6004e5cd56209, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Tickle
+      move: {fileID: 11400000, guid: 37ef9e559904c37448dac2939e8898c1, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3 - Confusion
+      move: {fileID: 11400000, guid: 7a45d6c4e094b4b419fb1623217ff0d6, type: 2}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6
+      move: {fileID: 0}
+    - name: Level 7 - Tickle
+      move: {fileID: 11400000, guid: 37ef9e559904c37448dac2939e8898c1, type: 2}
+    - name: Level 8
+      move: {fileID: 0}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10 - Fake Tears
+      move: {fileID: 11400000, guid: 838a516e150c960419f30ab96ce6aaff, type: 2}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12
+      move: {fileID: 0}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14 - Double Slap
+      move: {fileID: 11400000, guid: e04251dcf71f76842bb0b8b58092f23a, type: 2}
+    - name: Level 15
+      move: {fileID: 0}
+    - name: Level 16 - Psybeam
+      move: {fileID: 11400000, guid: ad63287d8a88855478555be8e65df6e8, type: 2}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18
+      move: {fileID: 0}
+    - name: Level 19 - Embargo
+      move: {fileID: 11400000, guid: 427b041c026c946488d0c166a5e1184e, type: 2}
+    - name: Level 20
+      move: {fileID: 0}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24 - Feint Attack
+      move: {fileID: 11400000, guid: 7d49e85c33c5d14408c10d95dc43b137, type: 2}
+    - name: Level 25 - Psyshock
+      move: {fileID: 11400000, guid: 0b3de3a958f259d48b2088c4048c2747, type: 2}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28 - Flatter
+      move: {fileID: 11400000, guid: 6576f70badd2eec4ca1c8e1920353808, type: 2}
+    - name: Level 29
+      move: {fileID: 0}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31 - Future Sight
+      move: {fileID: 11400000, guid: 2d66418a4ee21b344baec41a08d06056, type: 2}
+    - name: Level 32
+      move: {fileID: 0}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34 - Heal Block
+      move: {fileID: 11400000, guid: 9433db5dbdc17214b9c216feb956b029, type: 2}
+    - name: Level 35
+      move: {fileID: 0}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39 - Psychic
+      move: {fileID: 11400000, guid: 83c8b27429a1c8f4e8d171b0a1a22b91, type: 2}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43
+      move: {fileID: 0}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45 - Telekinesis
+      move: {fileID: 11400000, guid: 118852bd2626cf445a6a0f63f4f6226a, type: 2}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49
+      move: {fileID: 0}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54 - Charm
+      move: {fileID: 11400000, guid: dbe32bf529bc6a441b4a1a6204a22052, type: 2}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59 - Magic Room
+      move: {fileID: 11400000, guid: 8771d3f3787282f4eab644b9d4706220, type: 2}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62
+      move: {fileID: 0}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 70
+      attack: 55
+      defense: 0
+      specialAttack: 95
+      specialDefense: 0
+      speed: 65
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 8300000, guid: 97319b647c12a0b4eaf086105e6b8ea1, type: 3}
+    profile:
+      pokedexSpecies: "Astral Body Pok\xE9mon"
+      pokedexDescription: "They can predict the future from the placement and movement
+        of the stars. They can see Trainers\u2019 life spans."
+      height: 1.5 m
+      weight: 44 kg
+      eggGroups:
+      - Human-Like
+      genderRatio: 25:75
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

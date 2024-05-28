@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d173a4c49f0f44a84d3a55d1eb05f4, type: 3}
+  m_Name: 591 - Amoonguss
+  m_EditorClassIdentifier: 
+  info:
+    pID: 591
+    pokemonName: Amoonguss
+    lockedGender: 0
+    type1: {fileID: 11400000, guid: 2d5aa97aff29e2a4e9cc63c08551efd1, type: 2}
+    type2: {fileID: 11400000, guid: f11f4a55e3d1c2c4b9130c1f822def5f, type: 2}
+    abilities: []
+    hiddenAbility: {fileID: 0}
+    movesByLevel:
+    - name: Level 1 - Growth
+      move: {fileID: 11400000, guid: 0665e6e1f3146e745b0e0996deaa4272, type: 2}
+    - name: Level 2
+      move: {fileID: 0}
+    - name: Level 3
+      move: {fileID: 0}
+    - name: Level 4
+      move: {fileID: 0}
+    - name: Level 5
+      move: {fileID: 0}
+    - name: Level 6 - Growth
+      move: {fileID: 11400000, guid: 0665e6e1f3146e745b0e0996deaa4272, type: 2}
+    - name: Level 7
+      move: {fileID: 0}
+    - name: Level 8 - Astonish
+      move: {fileID: 11400000, guid: 9b1a5a0d974cdb8488e9ce7d0f0de245, type: 2}
+    - name: Level 9
+      move: {fileID: 0}
+    - name: Level 10
+      move: {fileID: 0}
+    - name: Level 11
+      move: {fileID: 0}
+    - name: Level 12 - Bide
+      move: {fileID: 11400000, guid: 86e308de939ac1849b20bbad4ff6236b, type: 2}
+    - name: Level 13
+      move: {fileID: 0}
+    - name: Level 14
+      move: {fileID: 0}
+    - name: Level 15 - Mega Drain
+      move: {fileID: 11400000, guid: b53288408b1436649a75d1cbf39db8d0, type: 2}
+    - name: Level 16
+      move: {fileID: 0}
+    - name: Level 17
+      move: {fileID: 0}
+    - name: Level 18 - Ingrain
+      move: {fileID: 11400000, guid: 93a4e8560e2af2d44bff1051dfec1e4d, type: 2}
+    - name: Level 19
+      move: {fileID: 0}
+    - name: Level 20 - Feint Attack
+      move: {fileID: 11400000, guid: 7d49e85c33c5d14408c10d95dc43b137, type: 2}
+    - name: Level 21
+      move: {fileID: 0}
+    - name: Level 22
+      move: {fileID: 0}
+    - name: Level 23
+      move: {fileID: 0}
+    - name: Level 24 - Sweet Scent
+      move: {fileID: 11400000, guid: f5dc8d520458137489e152ffb98de290, type: 2}
+    - name: Level 25
+      move: {fileID: 0}
+    - name: Level 26
+      move: {fileID: 0}
+    - name: Level 27
+      move: {fileID: 0}
+    - name: Level 28 - Giga Drain
+      move: {fileID: 11400000, guid: 461f91107d83a794a96a01be3d7b109a, type: 2}
+    - name: Level 29
+      move: {fileID: 0}
+    - name: Level 30
+      move: {fileID: 0}
+    - name: Level 31
+      move: {fileID: 0}
+    - name: Level 32 - Toxic
+      move: {fileID: 11400000, guid: 00e524765ea65fa469fd72b38b392cf5, type: 2}
+    - name: Level 33
+      move: {fileID: 0}
+    - name: Level 34
+      move: {fileID: 0}
+    - name: Level 35 - Synthesis
+      move: {fileID: 11400000, guid: b0aa414c2fc28ad459ea3f492a247da2, type: 2}
+    - name: Level 36
+      move: {fileID: 0}
+    - name: Level 37
+      move: {fileID: 0}
+    - name: Level 38
+      move: {fileID: 0}
+    - name: Level 39
+      move: {fileID: 0}
+    - name: Level 40
+      move: {fileID: 0}
+    - name: Level 41
+      move: {fileID: 0}
+    - name: Level 42
+      move: {fileID: 0}
+    - name: Level 43 - Clear Smog
+      move: {fileID: 11400000, guid: bb91aeea0e6f2b44e890b63fe47f142a, type: 2}
+    - name: Level 44
+      move: {fileID: 0}
+    - name: Level 45
+      move: {fileID: 0}
+    - name: Level 46
+      move: {fileID: 0}
+    - name: Level 47
+      move: {fileID: 0}
+    - name: Level 48
+      move: {fileID: 0}
+    - name: Level 49 - Solar Beam
+      move: {fileID: 11400000, guid: 012e4f034e4cd4246b887c665d014cdf, type: 2}
+    - name: Level 50
+      move: {fileID: 0}
+    - name: Level 51
+      move: {fileID: 0}
+    - name: Level 52
+      move: {fileID: 0}
+    - name: Level 53
+      move: {fileID: 0}
+    - name: Level 54 - Rage Powder
+      move: {fileID: 11400000, guid: d783bd37e6784524a8423ac012269293, type: 2}
+    - name: Level 55
+      move: {fileID: 0}
+    - name: Level 56
+      move: {fileID: 0}
+    - name: Level 57
+      move: {fileID: 0}
+    - name: Level 58
+      move: {fileID: 0}
+    - name: Level 59
+      move: {fileID: 0}
+    - name: Level 60
+      move: {fileID: 0}
+    - name: Level 61
+      move: {fileID: 0}
+    - name: Level 62 - Spore
+      move: {fileID: 11400000, guid: 48c221e5318f1bd47a97c8952118ee9b, type: 2}
+    - name: Level 63
+      move: {fileID: 0}
+    - name: Level 64
+      move: {fileID: 0}
+    - name: Level 65
+      move: {fileID: 0}
+    - name: Level 66
+      move: {fileID: 0}
+    - name: Level 67
+      move: {fileID: 0}
+    - name: Level 68
+      move: {fileID: 0}
+    - name: Level 69
+      move: {fileID: 0}
+    - name: Level 70
+      move: {fileID: 0}
+    - name: Level 71
+      move: {fileID: 0}
+    - name: Level 72
+      move: {fileID: 0}
+    - name: Level 73
+      move: {fileID: 0}
+    - name: Level 74
+      move: {fileID: 0}
+    - name: Level 75
+      move: {fileID: 0}
+    - name: Level 76
+      move: {fileID: 0}
+    - name: Level 77
+      move: {fileID: 0}
+    - name: Level 78
+      move: {fileID: 0}
+    - name: Level 79
+      move: {fileID: 0}
+    - name: Level 80
+      move: {fileID: 0}
+    - name: Level 81
+      move: {fileID: 0}
+    - name: Level 82
+      move: {fileID: 0}
+    - name: Level 83
+      move: {fileID: 0}
+    - name: Level 84
+      move: {fileID: 0}
+    - name: Level 85
+      move: {fileID: 0}
+    - name: Level 86
+      move: {fileID: 0}
+    - name: Level 87
+      move: {fileID: 0}
+    - name: Level 88
+      move: {fileID: 0}
+    - name: Level 89
+      move: {fileID: 0}
+    - name: Level 90
+      move: {fileID: 0}
+    - name: Level 91
+      move: {fileID: 0}
+    - name: Level 92
+      move: {fileID: 0}
+    - name: Level 93
+      move: {fileID: 0}
+    - name: Level 94
+      move: {fileID: 0}
+    - name: Level 95
+      move: {fileID: 0}
+    - name: Level 96
+      move: {fileID: 0}
+    - name: Level 97
+      move: {fileID: 0}
+    - name: Level 98
+      move: {fileID: 0}
+    - name: Level 99
+      move: {fileID: 0}
+    - name: Level 100
+      move: {fileID: 0}
+    movesByMachine: []
+    evolution: {fileID: 0}
+    evolveLevel: 0
+    evolutionsByItem: []
+    baseStats:
+      HP: 114
+      attack: 85
+      defense: 0
+      specialAttack: 85
+      specialDefense: 0
+      speed: 30
+    experienceRate: 0
+    experienceYield: 0
+    catchRate: 0
+    walkDistance: 0
+    cry: {fileID: 0}
+    profile:
+      pokedexSpecies: "Mushroom Pok\xE9mon"
+      pokedexDescription: "It lures prey close by dancing and waving its arm caps,
+        which resemble Pok\xE9 Balls, in a swaying motion."
+      height: 0.6 m
+      weight: 10.5 kg
+      eggGroups:
+      - Grass
+      genderRatio: 50:50
+      models:
+        myMaleModel: {fileID: 0}
+        myFemaleModel: {fileID: 0}
+        myShinyMaleModel: {fileID: 0}
+        myShinyFemaleModel: {fileID: 0}
+        sprite: {fileID: 0}
+        shinySprite: {fileID: 0}
+  shinyScale: 1
+  controller: {fileID: 0}
+  avatar: {fileID: 0}

@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6099878535456287151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8799293110842096629}
+  m_Layer: 7
+  m_Name: BattleCameraRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8799293110842096629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099878535456287151}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5107528243126069132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6195600802103887836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5107528243126069132}
+  - component: {fileID: 6857403391572189651}
+  - component: {fileID: 4484727751574652397}
+  - component: {fileID: 288758185907673719}
+  - component: {fileID: 1099410904983112864}
+  m_Layer: 7
+  m_Name: Pokemon Test
+  m_TagString: Pokemon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5107528243126069132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6195600802103887836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8799293110842096629}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6857403391572189651
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6195600802103887836}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &4484727751574652397
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6195600802103887836}
+  m_Enabled: 1
+  m_AgentTypeID: -334000983
+  m_Radius: 0.5
+  m_Speed: 3
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 5000
+  m_StoppingDistance: 0.5
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!136 &288758185907673719
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6195600802103887836}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.6, z: 0}
+--- !u!114 &1099410904983112864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6195600802103887836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e990fcdc149dcf42bb87e2ef349fdc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementState: 0
+  nma: {fileID: 0}
+  anim: {fileID: 0}
+  _animIDSpeed: 0
+  battleCameraRoot: {fileID: 8799293110842096629}
+  pokemon: {fileID: 0}
+  wild:
+    pokemon: {fileID: 0}
+    level: 5
+    gender: 0
+    ability: {fileID: 0}
+    nature: 0
+    IV:
+      HP: 0
+      attack: 0
+      defense: 0
+      specialAttack: 0
+      specialDefense: 0
+      speed: 0
+    stats:
+      HP: 0
+      attack: 0
+      defense: 0
+      specialAttack: 0
+      specialDefense: 0
+      speed: 0
+    status: 0
+    currentHealth: 0
+    moveset: []
+    myModel: {fileID: 0}
+    shiny: 0
+    inBattle: 0
+  maxTrainerBattleDistance: 10
+  inBattle: 0
+  rotationSpeed: 10
+  minMovementWaitTime: 8
+  maxMovementWaitTime: 18
+  movementTimer: 60
+  minBoredWaitTime: 15
+  maxBoredWaitTime: 60
+  boredTimer: 120
+  emotes: 2
+  boredEmotes: 5
+  colliderSettings:
+  - colliderName: Human
+    agentType: 0
+    isTrigger: 1
+    center: {x: 0, y: 0.5, z: 0}
+    size: {x: 1, y: 1, z: 1}
+  - colliderName: ExtraSmall
+    agentType: 1
+    isTrigger: 1
+    center: {x: 0, y: 0.5, z: 0}
+    size: {x: 1, y: 1, z: 1}
+  - colliderName: Small
+    agentType: 2
+    isTrigger: 1
+    center: {x: 0, y: 0.6, z: 0}
+    size: {x: 1, y: 1.2, z: 1}
+  - colliderName: Medium
+    agentType: 3
+    isTrigger: 1
+    center: {x: 0, y: 0.5, z: 0}
+    size: {x: 1, y: 1, z: 1}
+  - colliderName: Large
+    agentType: 4
+    isTrigger: 1
+    center: {x: 0, y: 0.5, z: 0}
+    size: {x: 1, y: 1, z: 1}
+  - colliderName: ExtraLarge
+    agentType: 5
+    isTrigger: 1
+    center: {x: 0, y: 0.5, z: 0}
+    size: {x: 1, y: 1, z: 1}

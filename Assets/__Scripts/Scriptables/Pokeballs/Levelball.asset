@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 114b487b4496bf24b9a51d3f591fa68a, type: 3}
+  m_Name: Levelball
+  m_EditorClassIdentifier: 
+  name: Level Ball
+  model: {fileID: 919132149155446097, guid: 28d809d7b779b2549b2b2a45712c1ded, type: 3}
+  modifier: 1
+  ballCalculation: 7
+  heal: 0
+  sprite: {fileID: 21300000, guid: 27cc3195ec4cb1f4a8e8ab11a2b43b77, type: 3}

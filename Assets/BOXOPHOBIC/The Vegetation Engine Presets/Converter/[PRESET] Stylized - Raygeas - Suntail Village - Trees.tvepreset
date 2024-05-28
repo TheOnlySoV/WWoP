@@ -1,0 +1,99 @@
+// Updated 27.12.2021
+
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Raygeas Suntail Trees
+InfoPreset Use this preset to convert Raygeas Suntail Village assets.
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/fantasy/suntail-village-203303
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputTransforms USE_ORIGINAL_TRANSFORMS
+
+Mesh SetVariation GET_MASK_PROCEDURAL 3
+Mesh SetOcclusion GET_MASK_PROCEDURAL 6
+Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+Mesh SetHeight GET_MASK_PROCEDURAL 4
+Mesh SetMotion2 GET_MASK_PROCEDURAL 16
+Mesh SetMotion3 GET_MASK_PROCEDURAL 16
+
+Mesh SetPivots NONE
+
+*******************************************************************
+
+if SHADER_NAME_CONTAINS Suntail Foliage
+{
+	Material SET_FLOAT _RenderNormals 2
+	Material SET_FLOAT _RenderSpecular 0
+
+	Material SET_FLOAT _FadeGlancingValue 1
+
+	Material COPY_FLOAT _AlphaCutoff _AlphaClipValue
+
+	Material COPY_COLOR _MainColor _MainColor
+	Material COPY_TEX _Albedo _MainAlbedoTex
+	Material COPY_FLOAT_AS_VECTOR_X _Tiling _MainUVs
+	Material COPY_FLOAT_AS_VECTOR_Y _Tiling _MainUVs
+
+	Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+	Material COPY_VECTOR _MainColor _SubsurfaceColor
+
+	// Combine Texture Channels
+	Texture PropName _MainMaskTex
+	Texture SetRed NONE
+	Texture SetGreen NONE
+	Texture SetBlue NONE
+	Texture SetAlpha GET_RED _SmoothnessTexture
+	Utility START_TEXTURE_PACKING	
+}
+
+if SHADER_NAME_CONTAINS Suntail Surface
+{
+	Include Use Default Bark Settings
+
+	Material COPY_COLOR _Color _MainColor
+	Material COPY_TEX _Albedo _MainAlbedoTex
+	Material COPY_TEX _Normal _MainNormalTex
+	Material COPY_TEX _MetallicSmoothness _MainMaskTex
+	Material COPY_FLOAT_AS_VECTOR_X _Tiling _MainUVs
+	Material COPY_FLOAT_AS_VECTOR_Y _Tiling _MainUVs
+
+	Material COPY_FLOAT _NormalScale _MainNormalValue
+	Material COPY_FLOAT _Metallic _MainMetallicValue
+	Material COPY_FLOAT _SurfaceSmoothness _MainSmoothnessValue
+
+	Material SET_FLOAT _MainOcclusionValue 0
+
+	if MATERIAL_HAS_TEX _Emission
+	{
+		Material COPY_VECTOR _EmissionColor _EmissiveColor
+
+		Material COPY_FLOAT_AS_VECTOR_X _Tiling _EmissiveUVs
+		Material COPY_FLOAT_AS_VECTOR_Y _Tiling _EmissiveUVs
+		
+		Texture PropName _EmissiveTex
+		Texture SetRed GET_GRAY _Emission
+		Texture SetGreen GET_GRAY _Emission
+		Texture SetBlue GET_GRAY _Emission
+		Texture SetAlpha NONE
+		Utility START_TEXTURE_PACKING
+	}
+
+	// Combine Texture Channels
+	if MATERIAL_KEYWORD_ENABLED _SMOOTHNESSSOURCE_ALBEDO_ALPHA
+	{
+		Texture PropName _MainMaskTex
+		Texture SetRed GET_RED _MetallicSmoothness
+		Texture SetGreen NONE
+		Texture SetBlue NONE
+		Texture SetAlpha GET_ALPHA _Albedo
+		Utility START_TEXTURE_PACKING
+	}
+}

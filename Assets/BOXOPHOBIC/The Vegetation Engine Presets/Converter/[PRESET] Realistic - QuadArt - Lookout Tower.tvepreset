@@ -1,0 +1,85 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle QuadArt Lookout Tower
+InfoPreset Use this preset to convert QuadArt Lookout Tower assets.
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/landscapes/lookout-tower-249265
+
+InfoWarning Please note, the Lookout Tower props are not currently supported!
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputOptions Grass/Plants/Trees 2
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Plants
+{
+	Mesh SetVariation GET_MASK_FROM_CHANNEL 0
+	Mesh SetOcclusion GET_MASK_PROCEDURAL 6
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 5
+	Mesh SetMotion3 GET_MASK_PROCEDURAL 5
+
+	Mesh SetPivots NONE
+}
+
+if OUTPUT_OPTION_CONTAINS Trees
+{
+	Mesh SetVariation GET_MASK_FROM_CHANNEL 0
+	Mesh SetOcclusion GET_MASK_PROCEDURAL 6
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 6
+	Mesh SetMotion3 GET_MASK_PROCEDURAL 6
+
+	Mesh SetPivots NONE
+}
+
+*******************************************************************
+
+if SHADER_NAME_CONTAINS M_Foliage
+{
+	Material SET_FLOAT _RenderNormals 2
+
+	Material COPY_FLOAT _Cutoff _AlphaClipValue
+
+	Material COPY_TEX _Albedo _MainAlbedoTex
+	Material COPY_TEX _BaseMap _MainAlbedoTex
+	Material COPY_TEX _NormalMap _MainNormalTex
+	
+	Material COPY_ST_AS_VECTOR _Albedo _MainUVs
+	Material COPY_ST_AS_VECTOR _BaseMap _MainUVs
+
+	Texture PropName _MainMaskTex
+	Texture SetRed NONE
+	Texture SetGreen GET_GREEN NONE
+	Texture SetBlue GET_ALPHA NONE
+	Texture SetAlpha GET_RED _Roughness ACTION_ONE_MINUS
+	Utility START_TEXTURE_PACKING
+}
+
+if MATERIAL_NAME_CONTAINS Bark
+{
+	Include Use Default Bark Settings
+	
+	Material SET_FLOAT _MainSmoothnessValue 1
+}
+
+Material SET_FLOAT _MotionVariation_10 0
+Material SET_FLOAT _MotionVariation_20 5
+Material SET_FLOAT _MotionVariation_32 5

@@ -1,0 +1,127 @@
+*******************************************************************
+*                             INFO                                *
+*******************************************************************
+
+InfoTitle Staggart Fantasy Foliage
+InfoPreset Use this preset to convert Staggart Creations FAE prefabs!
+InfoStatus ● ● ● ● ●
+InfoOnline https://assetstore.unity.com/packages/3d/environments/fantasy/fantasy-adventure-environment-70354
+
+*******************************************************************
+*                             PRESET                              *
+*******************************************************************
+
+OutputOptions Props/Grass/Flowers/Lilies/Plants/Trees/Willows 5
+OutputTransforms USE_ORIGINAL_TRANSFORMS
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	InfoMessage When converting FAE props, the detail maps are ignored to optimize 3 texture while keeping the result almost identical to the original shading!
+}
+
+*******************************************************************
+
+if OUTPUT_OPTION_CONTAINS Props
+{
+	Include Use Default Props Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Grass
+{
+	Include Use Default Grass Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Flowers
+{
+	Include Use Default Flowers Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Lilies
+{
+	Include Use Default Flowers Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Plants
+{
+	Include Use Default Plants Masks
+}
+
+if OUTPUT_OPTION_CONTAINS Trees
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_FROM_CHANNEL 0
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_PROCEDURAL 16
+	Mesh SetMotion3 GET_MASK_FROM_CHANNEL 0
+
+	Mesh SetPivots NONE
+}
+
+if OUTPUT_OPTION_CONTAINS Willows
+{
+	Mesh SetVariation GET_MASK_PROCEDURAL 3
+	Mesh SetOcclusion GET_MASK_FROM_CHANNEL 0
+	Mesh SetDetailMask GET_MASK_PROCEDURAL 8
+	Mesh SetDetailCoord GET_COORD_FROM_CHANNEL 0
+
+	Mesh SetHeight GET_MASK_PROCEDURAL 4
+	Mesh SetMotion2 GET_MASK_FROM_CHANNEL 5 ACTION_ONE_MINUS
+	Mesh SetMotion3 GET_MASK_FROM_CHANNEL 5 ACTION_ONE_MINUS
+
+	Mesh SetPivots NONE
+}
+
+*******************************************************************
+
+Material SET_FLOAT _RenderNormals 2
+Material SET_FLOAT _MainSmoothnessValue 0
+Material SET_VECTOR _VertexOcclusionColor 0.5 0.5 0.5 0.5
+
+Material COPY_TEX _MainTex _MainAlbedoTex
+Material COPY_ST_AS_VECTOR _MainTex _MainUVs
+Material COPY_TEX _BumpMap _MainNormalTex
+
+Material COPY_VECTOR _Color _MainColor
+Material COPY_FLOAT _Smoothness _MainSmoothnessValue
+
+if SHADER_NAME_CONTAINS Trunk
+{
+	Include Use Default Bark Settings
+}
+
+if SHADER_NAME_CONTAINS Billboard
+{
+	Include Use Default Cross Settings
+
+	Material COPY_TEX _Atlas _MainAlbedoTex
+	Material COPY_ST_AS_VECTOR _Atlas _MainUVs
+	Material COPY_TEX _Normals _MainNormalTex
+
+	Material SET_FLOAT _RenderCull 2
+}
+
+if SHADER_NAME_CONTAINS Cliff
+{
+	Include Use Default Props Settings
+	
+	Material COPY_VECTOR _ObjectColor _MainColor
+	Material COPY_TEX _Objectalbedo _MainAlbedoTex
+	Material COPY_TEX _Objectnormals _MainNormalTex
+	Material COPY_ST_AS_VECTOR _Objectalbedo _MainUVs
+
+	Material SET_FLOAT _MainNormalValue 1
+	Material SET_FLOAT _MainMetallicValue 0
+	Material SET_FLOAT _MainOcclusionValue 1
+	Material SET_FLOAT _MainSmoothnessValue 0
+}
+
+if OUTPUT_OPTION_CONTAINS Willows
+{
+	if SHADER_NAME_CONTAINS Trunk
+	{
+		Material SET_FLOAT _MotionValue_20 0
+	}
+}
